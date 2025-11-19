@@ -63,6 +63,10 @@ namespace StarterAssets
 		// timeout deltatime
 		private float _jumpTimeoutDelta;
 		private float _fallTimeoutDelta;
+		public float crouchHeight = 1.0f;
+    	public float standingHeight = 2.0f;
+    	public float crouchSpeed = 2.0f;
+        public float standSpeed = 4.0f;
 
 	
 #if ENABLE_INPUT_SYSTEM
@@ -71,8 +75,8 @@ namespace StarterAssets
 		private CharacterController _controller;
 		private StarterAssetsInputs _input;
 		private GameObject _mainCamera;
-
-		private const float _threshold = 0.01f;
+        private bool isCrouching;
+        private const float _threshold = 0.01f;
 
 		private bool IsCurrentDeviceMouse
 		{
@@ -115,6 +119,10 @@ namespace StarterAssets
 			JumpAndGravity();
 			GroundedCheck();
 			Move();
+			if (Input.GetKeyDown(KeyCode.LeftControl)){
+
+			ToggleCrouch();
+			}
 		}
 
 		private void LateUpdate()
@@ -150,6 +158,21 @@ namespace StarterAssets
 				transform.Rotate(Vector3.up * _rotationVelocity);
 			}
 		}
+         void ToggleCrouch()
+        {
+        if (isCrouching)
+        {
+            // Stand up
+			_controller.height = standingHeight;
+            isCrouching = false;
+        }
+        else
+        {
+            // Crouch down
+			_controller.height = crouchHeight;
+            isCrouching = true;
+        }
+    }
 
 		private void Move()
 		{
