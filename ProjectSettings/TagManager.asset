@@ -3,7 +3,23 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
+<<<<<<< Updated upstream
   tags: []
+=======
+  tags:
+  - Wall
+  - Metal
+  - Blood
+  - Dirt
+  - Concrete
+  - ExplosiveBarrel
+  - Target
+  - GasTank
+  - Metal (Static)
+  - Wood (Static)
+  - Dirt (Static)
+  - Wood
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
@@ -13,14 +29,14 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Wall
+  - First Person View
+  - Character
+  - Post Processing
+  - Post Processing Weapon
+  - Post Processing Scope
+  - Invisible Wall
+  - Projectile
   - 
   - 
   - 
@@ -41,6 +57,7 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+<<<<<<< Updated upstream
   m_RenderingLayers:
   - Default
   - Light Layer 1
@@ -74,3 +91,5 @@ TagManager:
   - 
   - 
   - 
+=======
+>>>>>>> Stashed changes
