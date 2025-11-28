@@ -16,6 +16,9 @@ public class Raycast : MonoBehaviour
     private AudioSource gunAudio;
     private float nextFire;
 
+    [SerializeField] private GameObject bulletImpactPrefab;
+
+
     void Start()
     {
         // Essayer plusieurs méthodes pour trouver la caméra
@@ -50,16 +53,28 @@ public class Raycast : MonoBehaviour
         Vector3 rayOrigin = fpsCam.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, 0f));
         RaycastHit hit;
 
-        if (Physics.Raycast(rayOrigin, fpsCam.transform.forward, out hit, weaponRange))
-        {
-            // Appliquer une force physique uniquement
-            if (hit.rigidbody != null)
-            {
-                hit.rigidbody.AddForce(-hit.normal * hitForce);
-            }
-
-            // Afficher dans la console ce qui a été touché (pour debug)
-            Debug.Log("Touché: " + hit.collider.name);
-        }
+if (Physics.Raycast(rayOrigin, fpsCam.transform.forward, out hit, weaponRange))
+{
+    // Appliquer une force physique uniquement
+    if (hit.rigidbody != null)
+    {
+        hit.rigidbody.AddForce(-hit.normal * hitForce);
+    }
+    
+    // Calculer la position avec un petit décalage pour éviter le z-fighting
+    Vector3 impactPosition = hit.point + hit.normal * 0.001f;
+    
+    // Instancier l'impact avec la bonne rotation
+    // Quaternion.LookRotation pointe le "forward" du plane vers la normale
+    GameObject impact = Instantiate(bulletImpactPrefab, impactPosition, Quaternion.LookRotation(hit.normal));
+    
+    // Faire de l'objet touché le parent de l'impact (optionnel mais recommandé)
+    impact.transform.SetParent(hit.transform);
+    
+    // Détruire l'impact après quelques secondes
+    Destroy(impact, 2f);
+    
+    Debug.Log("Touché: " + hit.collider.name);
+}
     }
 }
