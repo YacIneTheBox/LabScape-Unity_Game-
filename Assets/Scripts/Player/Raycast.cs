@@ -64,16 +64,6 @@ if (Physics.Raycast(rayOrigin, fpsCam.transform.forward, out hit, weaponRange))
     // Calculer la position avec un petit décalage pour éviter le z-fighting
     Vector3 impactPosition = hit.point + hit.normal * 0.001f;
     
-    // Instancier l'impact avec la bonne rotation
-    // Quaternion.LookRotation pointe le "forward" du plane vers la normale
-    GameObject impact = Instantiate(bulletImpactPrefab, impactPosition, Quaternion.LookRotation(hit.normal));
-    
-    // Faire de l'objet touché le parent de l'impact (optionnel mais recommandé)
-    impact.transform.SetParent(hit.transform);
-    
-    // Détruire l'impact après quelques secondes
-    Destroy(impact, 2f);
-    
     Debug.Log("Touché: " + hit.collider.name);
 }
     }
