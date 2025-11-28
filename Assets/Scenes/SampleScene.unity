@@ -1114,7 +1114,7 @@ MonoBehaviour:
   weaponRange: 50
   hitForce: 100
   gunEnd: {fileID: 2141355551}
-  bulletImpactPrefab: {fileID: 1536728403324796908, guid: 722510038e76cfb4caca63b5090ad750, type: 3}
+  hitParticlesPrefab: {fileID: 8412461547500601435, guid: 2cb3b6538422ddc46a473260ff57c45f, type: 3}
 --- !u!1 &606987058
 GameObject:
   m_ObjectHideFlags: 0

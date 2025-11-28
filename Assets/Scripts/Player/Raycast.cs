@@ -16,7 +16,7 @@ public class Raycast : MonoBehaviour
     private AudioSource gunAudio;
     private float nextFire;
 
-    [SerializeField] private GameObject bulletImpactPrefab;
+    [SerializeField] private GameObject hitParticlesPrefab;
 
 
     void Start()
@@ -49,22 +49,27 @@ public class Raycast : MonoBehaviour
 
     void Shoot()
     {
-
         Vector3 rayOrigin = fpsCam.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, 0f));
         RaycastHit hit;
 
-if (Physics.Raycast(rayOrigin, fpsCam.transform.forward, out hit, weaponRange))
-{
-    // Appliquer une force physique uniquement
-    if (hit.rigidbody != null)
-    {
-        hit.rigidbody.AddForce(-hit.normal * hitForce);
+        if (Physics.Raycast(rayOrigin, fpsCam.transform.forward, out hit, weaponRange))
+        {
+            // Appliquer une force physique
+            if (hit.rigidbody != null)
+            {
+                hit.rigidbody.AddForce(-hit.normal * hitForce);
+            }
+
+            // Position avec offset pour éviter le z-fighting
+            Vector3 impactPosition = hit.point + hit.normal * 0.001f;
+
+            // Instancier les particules d'impact
+            GameObject particles = Instantiate(hitParticlesPrefab, hit.point, Quaternion.LookRotation(hit.normal));
+            Destroy(particles, 10f);
+            // Pas besoin de Destroy si "Stop Action" est sur "Destroy" dans le Particle System
+
+            Debug.Log("Touché: " + hit.collider.name);
+        }
     }
-    
-    // Calculer la position avec un petit décalage pour éviter le z-fighting
-    Vector3 impactPosition = hit.point + hit.normal * 0.001f;
-    
-    Debug.Log("Touché: " + hit.collider.name);
-}
-    }
+
 }
