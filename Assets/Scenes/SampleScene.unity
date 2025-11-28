@@ -384,7 +384,7 @@ GameObject:
   - component: {fileID: 45227093}
   - component: {fileID: 45227092}
   m_Layer: 0
-  m_Name: Cube (27)
+  m_Name: Mur_Salle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -411,7 +411,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 294927098}
+  m_Mesh: {fileID: 2078026755}
 --- !u!33 &45227093
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -722,7 +722,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 778592618}
   m_LocalEulerAnglesHint: {x: 0, y: -85.84, z: 0}
 --- !u!1 &75008479 stripped
 GameObject:
@@ -1631,7 +1631,7 @@ GameObject:
   - component: {fileID: 150350639}
   - component: {fileID: 150350638}
   m_Layer: 0
-  m_Name: Cube (26)
+  m_Name: Mur_Salle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1658,7 +1658,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 948273955}
+  m_Mesh: {fileID: 581110788}
 --- !u!33 &150350639
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -1964,12 +1964,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 150350637}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.96, y: 1.6284968, z: 32.29}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 778592618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &162873618
 Mesh:
@@ -2275,7 +2275,7 @@ GameObject:
   - component: {fileID: 259213945}
   - component: {fileID: 259213944}
   m_Layer: 0
-  m_Name: Cube (11)
+  m_Name: Sol_Salle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2604,12 +2604,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 259213943}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2.4147406, y: -0.0038121114, z: 22.643211}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 778592618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &277336941
 Mesh:
@@ -3191,7 +3191,7 @@ GameObject:
   - component: {fileID: 393445361}
   - component: {fileID: 393445360}
   m_Layer: 0
-  m_Name: Cube (15)
+  m_Name: Obstacle1_Salle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3218,7 +3218,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 277336941}
+  m_Mesh: {fileID: 435437331}
 --- !u!33 &393445361
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -3524,12 +3524,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 393445359}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -3.28, y: 1.2874407, z: 23.96}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 778592618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &398556980
 GameObject:
@@ -3886,7 +3886,7 @@ GameObject:
   - component: {fileID: 448068782}
   - component: {fileID: 448068781}
   m_Layer: 0
-  m_Name: Cube (25)
+  m_Name: Mur_Salle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4224,7 +4224,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 778592618}
   m_LocalEulerAnglesHint: {x: 0, y: -85.84, z: 0}
 --- !u!1 &450379742
 GameObject:
@@ -4980,7 +4980,7 @@ GameObject:
   - component: {fileID: 491777832}
   - component: {fileID: 491777831}
   m_Layer: 0
-  m_Name: Cube (28)
+  m_Name: Obstacle1_Salle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5007,7 +5007,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 676417280}
+  m_Mesh: {fileID: 1126976006}
 --- !u!33 &491777832
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -5313,13 +5313,59 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 491777830}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.3, y: 1.2874407, z: 29.47}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 778592618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &492140985
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 492140986}
+  - component: {fileID: 492140987}
+  m_Layer: 0
+  m_Name: SpawnPoint_Salle2
+  m_TagString: SpawnPoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &492140986
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492140985}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.25, y: 0.69, z: 26.61}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 778592618}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &492140987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492140985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4420f2df5a70fea4f8c7313343a4e1e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpawnPointGizmo
+  gizmoColor: {r: 0, g: 1, b: 0, a: 1}
+  gizmoSize: 0.5
 --- !u!1 &519597082
 GameObject:
   m_ObjectHideFlags: 0
@@ -5690,7 +5736,7 @@ GameObject:
   - component: {fileID: 525325666}
   - component: {fileID: 525325665}
   m_Layer: 0
-  m_Name: Cube (24)
+  m_Name: Mur_Salle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6023,12 +6069,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 525325664}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.46, y: 1.6284968, z: 18.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 778592618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &531628560
 GameObject:
@@ -6170,7 +6216,7 @@ GameObject:
   - component: {fileID: 547257838}
   - component: {fileID: 547257837}
   m_Layer: 0
-  m_Name: Cube (23)
+  m_Name: Obstacle1_Salle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6503,12 +6549,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 547257836}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -5.36, y: 1.2874407, z: 27.14}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 778592618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &565324242
 GameObject:
@@ -7065,7 +7111,7 @@ GameObject:
   - component: {fileID: 643381993}
   - component: {fileID: 643381992}
   m_Layer: 0
-  m_Name: Cube (20)
+  m_Name: Obstacle1_Salle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7092,7 +7138,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 852568468}
+  m_Mesh: {fileID: 145281254}
 --- !u!33 &643381993
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -7398,12 +7444,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 643381991}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.71, y: 1.2874407, z: 27.64}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 778592618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &675654920
 GameObject:
@@ -8250,7 +8296,7 @@ GameObject:
   - component: {fileID: 771238281}
   - component: {fileID: 771238280}
   m_Layer: 0
-  m_Name: Cube (12)
+  m_Name: Obstacle1_Salle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8583,12 +8629,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 771238279}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.35, y: 1.2874407, z: 25.58}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 778592618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &774790629
 Mesh:
@@ -8768,6 +8814,59 @@ Mesh:
       - serializedVersion: 1
         m_IndexStart: 0
         m_IndexCount: 0
+--- !u!1 &778592617
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 778592618}
+  m_Layer: 0
+  m_Name: Salle 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &778592618
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 778592617}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 259213949}
+  - {fileID: 771238285}
+  - {fileID: 1336723857}
+  - {fileID: 491777836}
+  - {fileID: 393445365}
+  - {fileID: 1756082189}
+  - {fileID: 1071033369}
+  - {fileID: 1902430693}
+  - {fileID: 547257842}
+  - {fileID: 900529606}
+  - {fileID: 1740034993}
+  - {fileID: 935763523}
+  - {fileID: 2116645984}
+  - {fileID: 1965181988}
+  - {fileID: 1030387016}
+  - {fileID: 1764614220}
+  - {fileID: 643381997}
+  - {fileID: 525325670}
+  - {fileID: 150350643}
+  - {fileID: 448068786}
+  - {fileID: 45227097}
+  - {fileID: 492140986}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &786402182
 GameObject:
   m_ObjectHideFlags: 0
@@ -9286,7 +9385,7 @@ GameObject:
   - component: {fileID: 900529602}
   - component: {fileID: 900529601}
   m_Layer: 0
-  m_Name: Cube (31)
+  m_Name: Obstacle1_Salle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9313,7 +9412,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 1686281750}
+  m_Mesh: {fileID: 1126217207}
 --- !u!33 &900529602
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -9619,12 +9718,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 900529600}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -7.09, y: 1.2874407, z: 24.94}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 778592618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &935763517
 GameObject:
@@ -9641,7 +9740,7 @@ GameObject:
   - component: {fileID: 935763519}
   - component: {fileID: 935763518}
   m_Layer: 0
-  m_Name: Cube (17)
+  m_Name: Obstacle1_Salle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9668,7 +9767,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 435437331}
+  m_Mesh: {fileID: 743052243}
 --- !u!33 &935763519
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -9974,12 +10073,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 935763517}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.4, y: 1.2874407, z: 20.58}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 778592618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &948273955
 Mesh:
@@ -10741,7 +10840,7 @@ GameObject:
   - component: {fileID: 1030387012}
   - component: {fileID: 1030387011}
   m_Layer: 0
-  m_Name: Cube (18)
+  m_Name: Obstacle1_Salle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10768,7 +10867,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 1930149353}
+  m_Mesh: {fileID: 114057606}
 --- !u!33 &1030387012
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -11074,12 +11173,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1030387010}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2.57, y: 1.2874407, z: 23.88}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 778592618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1071033363
 GameObject:
@@ -11096,7 +11195,7 @@ GameObject:
   - component: {fileID: 1071033365}
   - component: {fileID: 1071033364}
   m_Layer: 0
-  m_Name: Cube (21)
+  m_Name: Obstacle1_Salle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11123,7 +11222,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 435437331}
+  m_Mesh: {fileID: 23501771}
 --- !u!33 &1071033365
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -11429,12 +11528,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1071033363}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -5.36, y: 1.2874407, z: 22.28}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 778592618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1079506831
 GameObject:
@@ -12629,6 +12728,52 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: -2832283450891116092, guid: 325c4e5a3aca0bf4396369a28ee1efd3, type: 3}
   m_PrefabInstance: {fileID: 2223105}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1217423000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1217423002}
+  - component: {fileID: 1217423001}
+  m_Layer: 0
+  m_Name: SpawnPoint_Salle1
+  m_TagString: SpawnPoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1217423001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217423000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4420f2df5a70fea4f8c7313343a4e1e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpawnPointGizmo
+  gizmoColor: {r: 0, g: 1, b: 0, a: 1}
+  gizmoSize: 0.5
+--- !u!4 &1217423002
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217423000}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.78446, y: 1.1, z: -1.82}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1218618272
 GameObject:
   m_ObjectHideFlags: 0
@@ -13427,7 +13572,7 @@ GameObject:
   - component: {fileID: 1336723853}
   - component: {fileID: 1336723852}
   m_Layer: 0
-  m_Name: Cube (16)
+  m_Name: Obstacle2_Salle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13454,7 +13599,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 277336941}
+  m_Mesh: {fileID: 676417280}
 --- !u!33 &1336723853
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -13760,12 +13905,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1336723851}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.72, y: 1.2874407, z: 27.33}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 778592618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1341978623
 GameObject:
@@ -16314,6 +16459,51 @@ Mesh:
       - serializedVersion: 1
         m_IndexStart: 0
         m_IndexCount: 0
+--- !u!1 &1717635520
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1717635522}
+  - component: {fileID: 1717635521}
+  m_Layer: 0
+  m_Name: SpawnManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1717635521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717635520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90cd12f86492d8c43afa1597398cb9e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpawnManager
+  spawnPoints: []
+--- !u!4 &1717635522
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717635520}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.78446, y: 0, z: 5.92676}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1730739572
 GameObject:
   m_ObjectHideFlags: 0
@@ -16440,7 +16630,7 @@ GameObject:
   - component: {fileID: 1740034989}
   - component: {fileID: 1740034988}
   m_Layer: 0
-  m_Name: Cube (29)
+  m_Name: Obstacle1_Salle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16467,7 +16657,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 1686281750}
+  m_Mesh: {fileID: 1547057458}
 --- !u!33 &1740034989
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -16773,12 +16963,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1740034987}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -3.91, y: 1.2874407, z: 29.72}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 778592618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1750310755
 GameObject:
@@ -17150,7 +17340,7 @@ GameObject:
   - component: {fileID: 1756082185}
   - component: {fileID: 1756082184}
   m_Layer: 0
-  m_Name: Cube (22)
+  m_Name: Obstacle1_Salle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17177,7 +17367,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 435437331}
+  m_Mesh: {fileID: 1562822170}
 --- !u!33 &1756082185
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -17483,12 +17673,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1756082183}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.35, y: 1.2874407, z: 23.96}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 778592618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1764614214
 GameObject:
@@ -17505,7 +17695,7 @@ GameObject:
   - component: {fileID: 1764614216}
   - component: {fileID: 1764614215}
   m_Layer: 0
-  m_Name: Cube (19)
+  m_Name: Obstacle1_Salle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17532,7 +17722,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 114057606}
+  m_Mesh: {fileID: 852568468}
 --- !u!33 &1764614216
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -17838,12 +18028,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1764614214}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.71, y: 1.2874407, z: 27.64}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 778592618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1771084484
 GameObject:
@@ -18994,7 +19184,7 @@ GameObject:
   - component: {fileID: 1902430689}
   - component: {fileID: 1902430688}
   m_Layer: 0
-  m_Name: Cube (30)
+  m_Name: Obstacle1_Salle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19021,7 +19211,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 23501771}
+  m_Mesh: {fileID: 1827982716}
 --- !u!33 &1902430689
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -19327,12 +19517,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1902430687}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -2.97, y: 1.2874407, z: 19.98}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 778592618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &1930149353
 Mesh:
@@ -19705,7 +19895,7 @@ GameObject:
   - component: {fileID: 1965181984}
   - component: {fileID: 1965181983}
   m_Layer: 0
-  m_Name: Cube (13)
+  m_Name: Obstacle1_Salle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19732,7 +19922,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 277336941}
+  m_Mesh: {fileID: 1930149353}
 --- !u!33 &1965181984
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -20038,12 +20228,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1965181982}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2.57, y: 1.2874407, z: 20.48}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 778592618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1974755357
 GameObject:
@@ -20460,7 +20650,7 @@ GameObject:
   - component: {fileID: 2116645980}
   - component: {fileID: 2116645979}
   m_Layer: 0
-  m_Name: Cube (14)
+  m_Name: Obstacle1_Salle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20487,7 +20677,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 277336941}
+  m_Mesh: {fileID: 1357081219}
 --- !u!33 &2116645980
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -20793,12 +20983,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2116645978}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.77, y: 1.2874407, z: 22.16}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 778592618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2132507405
 GameObject:
@@ -20951,7 +21141,6 @@ SceneRoots:
   - {fileID: 786402184}
   - {fileID: 565324246}
   - {fileID: 1079506834}
-  - {fileID: 132794260}
   - {fileID: 1563240994}
   - {fileID: 531628565}
   - {fileID: 398556981}
@@ -20966,24 +21155,7 @@ SceneRoots:
   - {fileID: 1341978629}
   - {fileID: 450379748}
   - {fileID: 132593984}
-  - {fileID: 259213949}
-  - {fileID: 771238285}
-  - {fileID: 1336723857}
-  - {fileID: 491777836}
-  - {fileID: 393445365}
-  - {fileID: 1756082189}
-  - {fileID: 1071033369}
-  - {fileID: 1902430693}
-  - {fileID: 547257842}
-  - {fileID: 900529606}
-  - {fileID: 1740034993}
-  - {fileID: 935763523}
-  - {fileID: 2116645984}
-  - {fileID: 1965181988}
-  - {fileID: 1030387016}
-  - {fileID: 1764614220}
-  - {fileID: 643381997}
-  - {fileID: 525325670}
-  - {fileID: 150350643}
-  - {fileID: 448068786}
-  - {fileID: 45227097}
+  - {fileID: 132794260}
+  - {fileID: 778592618}
+  - {fileID: 1717635522}
+  - {fileID: 1217423002}
