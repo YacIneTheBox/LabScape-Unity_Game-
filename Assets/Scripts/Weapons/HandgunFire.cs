@@ -13,7 +13,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
     [Header("Camera Shake Effect")]
     [SerializeField]
     [Tooltip("Intensité du shake (en unités Unity)")]
-    private float shakeAmount = 0.1f;
+    private float shakeAmount = 0f;
 
     [SerializeField]
     [Tooltip("Durée du shake (en secondes)")]
