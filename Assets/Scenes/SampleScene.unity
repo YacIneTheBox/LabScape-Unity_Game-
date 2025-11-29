@@ -856,6 +856,50 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!1 &526069794 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2107409826236812522, guid: 76f50b6ea52fb884886f9ea81bef3ee7, type: 3}
+  m_PrefabInstance: {fileID: 1563240994}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &526069795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 526069794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70d03a11ecba6a246b64227c1308c53a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DroneChase
+  playerTarget: {fileID: 583536413}
+  flightHeight: 2
+  hoverSpeed: 2
+  hoverAmplitude: 0.2
+  rotationSpeed: 10
+--- !u!195 &526069796
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 526069794}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &531628560
 GameObject:
   m_ObjectHideFlags: 0
@@ -1479,6 +1523,60 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &660715424
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 660715426}
+  - component: {fileID: 660715425}
+  m_Layer: 0
+  m_Name: Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &660715425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660715424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac2b3517ece12ef41b4b8a3ebf89af35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WaveSpawner
+  player: {fileID: 583536413}
+  numberOfSpawnPoints: 2
+  waves:
+  - name: Enemy
+    enemyPrefab: {fileID: 526069794}
+    count: 4
+    rate: 3
+  timeBetweenWaves: 5
+  state: 2
+  waveCountdown: 0
+--- !u!4 &660715426
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660715424}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.60679, y: 0.59634, z: -3.26496}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &675654920
 GameObject:
   m_ObjectHideFlags: 0
@@ -2230,6 +2328,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1129895916}
+  - component: {fileID: 1129895917}
   m_Layer: 0
   m_Name: Floor
   m_TagString: Untagged
@@ -2255,6 +2354,38 @@ Transform:
   - {fileID: 1501036258}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1129895917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1129895915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshSurface
+  m_SerializedVersion: 0
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.16666667
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 23800000, guid: 93ddf425e73d667458f1162887decbfb, type: 2}
+  m_BuildHeightMesh: 0
 --- !u!1001 &1156925657
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3307,7 +3438,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2107409826236812522, guid: 76f50b6ea52fb884886f9ea81bef3ee7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 526069796}
+    - targetCorrespondingSourceObject: {fileID: 2107409826236812522, guid: 76f50b6ea52fb884886f9ea81bef3ee7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 526069795}
   m_SourcePrefab: {fileID: 3150474306388093854, guid: 76f50b6ea52fb884886f9ea81bef3ee7, type: 3}
 --- !u!1 &1713813965
 GameObject:
@@ -4490,3 +4627,4 @@ SceneRoots:
   - {fileID: 531628565}
   - {fileID: 398556981}
   - {fileID: 1713813967}
+  - {fileID: 660715426}
