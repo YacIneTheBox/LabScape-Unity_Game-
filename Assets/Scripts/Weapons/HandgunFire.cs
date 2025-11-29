@@ -9,23 +9,17 @@ public class NewMonoBehaviourScript : MonoBehaviour
     [SerializeField] bool canFire = true;
     [SerializeField] GameObject extraCross;
 
-    // ===== CAMERA SHAKE VARIABLES ===== 
+    // AJOUT : Référence au script Raycast
+    [Header("References")]
+    [SerializeField] Raycast raycastScript;
+
     [Header("Camera Shake Effect")]
-    [SerializeField]
-    [Tooltip("Intensité du shake (en unités Unity)")]
-    private float shakeAmount = 0f;
-
-    [SerializeField]
-    [Tooltip("Durée du shake (en secondes)")]
-    private float shakeDuration = 0.15f;
-
-    [SerializeField]
-    [Tooltip("Vitesse de décroissance du shake")]
-    private float decreaseFactor = 2.0f;
+    [SerializeField] private float shakeAmount = 0f;
+    [SerializeField] private float shakeDuration = 0.15f;
+    [SerializeField] private float decreaseFactor = 2.0f;
 
     private Camera playerCamera;
     private Transform cameraTransform;
-    // ==================================
 
     void Start()
     {
@@ -35,7 +29,6 @@ public class NewMonoBehaviourScript : MonoBehaviour
             cameraTransform = playerCamera.transform;
         }
     }
-
 
     void Update()
     {
@@ -59,10 +52,17 @@ public class NewMonoBehaviourScript : MonoBehaviour
         extraCross.SetActive(true);
         GlobalAmmo.handgunAmmo--;
         handGun.GetComponent<Animator>().SetTrigger("Shoot");
-        // ===== LANCE LE CAMERA SHAKE ===== 
+
+        // APPEL DU RAYCAST ICI
+        // On ne tire le rayon et les particules que si on a des munitions
+        if (raycastScript != null)
+        {
+            raycastScript.Shoot();
+        }
+
         StartCoroutine(CameraShake());
-        // =================================
-        yield return new WaitForSeconds(0.5f);
+
+        yield return new WaitForSeconds(0.5f); // Ceci gère désormais la cadence de tir globale
         extraCross.SetActive(false);
         canFire = true;
     }
@@ -74,30 +74,19 @@ public class NewMonoBehaviourScript : MonoBehaviour
         canFire = true;
     }
 
-    // ===== CAMERA SHAKE COROUTINE ===== 
+    // ... (Votre coroutine CameraShake reste inchangée) ...
     IEnumerator CameraShake()
     {
         if (cameraTransform == null) yield break;
-
         Vector3 originalPosition = cameraTransform.localPosition;
         float currentDuration = shakeDuration;
-
         while (currentDuration > 0)
         {
-            // Génère une position aléatoire dans un rayon défini
             Vector3 shakeOffset = Random.insideUnitSphere * shakeAmount;
             cameraTransform.localPosition = originalPosition + shakeOffset;
-
-            // Décroissance progressive de la durée
             currentDuration -= Time.deltaTime * decreaseFactor;
-
-            yield return null; // Attends la prochaine frame
+            yield return null;
         }
-
-        // Retour à la position d'origine
         cameraTransform.localPosition = originalPosition;
     }
-    // ===================================
 }
-
-
