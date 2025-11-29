@@ -1,0 +1,16 @@
+using UnityEngine;
+
+public class PistolAmmoCollect : MonoBehaviour
+{
+    [SerializeField] AudioSource ammoCollect;
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player")) { 
+            this.gameObject.GetComponent<BoxCollider>().enabled = false;
+            ammoCollect.Play();
+            GlobalAmmo.handgunAmmo += 100;
+            Destroy(gameObject);
+        
+        }
+    }
+}
