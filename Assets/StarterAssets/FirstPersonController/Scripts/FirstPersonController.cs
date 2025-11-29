@@ -2,6 +2,7 @@
 #if ENABLE_INPUT_SYSTEM
 using UnityEngine.InputSystem;
 #endif
+using Cinemachine;
 
 namespace StarterAssets
 {
@@ -11,7 +12,8 @@ namespace StarterAssets
 #endif
 	public class FirstPersonController : MonoBehaviour
 	{
-		[Header("Player")]
+
+        [Header("Player")]
 		[Tooltip("Move speed of the character in m/s")]
 		public float MoveSpeed = 4.0f;
 		[Tooltip("Sprint speed of the character in m/s")]
@@ -51,8 +53,19 @@ namespace StarterAssets
 		[Tooltip("How far in degrees can you move the camera down")]
 		public float BottomClamp = -90.0f;
 
-		// cinemachine
-		private float _cinemachineTargetPitch;
+        // AJOUTE CES VARIABLES ICI ↓
+        [Header("Dynamic FOV")]
+        [Tooltip("FOV when standing still or walking")]
+        public float baseFOV = 60f;
+        [Tooltip("FOV when sprinting at max speed")]
+        public float sprintFOV = 75f;
+        [Tooltip("How quickly the FOV transitions (higher = faster)")]
+        public float fovTransitionSpeed = 10f;
+
+        private Camera _playerCamera; // AJOUTE CETTE LIGNE
+
+        // cinemachine
+        private float _cinemachineTargetPitch;
 
 		// player
 		private float _speed;
@@ -103,8 +116,13 @@ namespace StarterAssets
 		{
 			_controller = GetComponent<CharacterController>();
 			_input = GetComponent<StarterAssetsInputs>();
+
+            // AJOUTE CES 2 LIGNES ↓
+            _playerCamera = Camera.main; // Récupère la caméra principale
+            if (_playerCamera != null) _playerCamera.fieldOfView = baseFOV; // Initialise le FOV
+
 #if ENABLE_INPUT_SYSTEM
-			_playerInput = GetComponent<PlayerInput>();
+            _playerInput = GetComponent<PlayerInput>();
 #else
 			Debug.LogError( "Starter Assets package is missing dependencies. Please use Tools/Starter Assets/Reinstall Dependencies to fix it");
 #endif
@@ -119,11 +137,9 @@ namespace StarterAssets
 			JumpAndGravity();
 			GroundedCheck();
 			Move();
-			if (Input.GetKeyDown(KeyCode.LeftControl)){
+			UpdateDynamicFOV();
 
-			ToggleCrouch();
-			}
-		}
+        }
 
 		private void LateUpdate()
 		{
@@ -137,7 +153,29 @@ namespace StarterAssets
 			Grounded = Physics.CheckSphere(spherePosition, GroundedRadius, GroundLayers, QueryTriggerInteraction.Ignore);
 		}
 
-		private void CameraRotation()
+        private void UpdateDynamicFOV()
+        {
+            if (_playerCamera == null) return;
+
+            // Calcule la vitesse horizontale actuelle
+            float currentHorizontalSpeed = new Vector3(_controller.velocity.x, 0.0f, _controller.velocity.z).magnitude;
+
+            // Normalise la vitesse entre 0 et 1
+            float speedNormalized = Mathf.Clamp01(currentHorizontalSpeed / SprintSpeed);
+
+            // Calcule le FOV cible
+            float targetFOV = Mathf.Lerp(baseFOV, sprintFOV, speedNormalized);
+
+            // Transition fluide vers le FOV cible
+            _playerCamera.fieldOfView = Mathf.Lerp(
+                _playerCamera.fieldOfView,
+                targetFOV,
+                Time.deltaTime * fovTransitionSpeed
+            );
+        }
+
+
+        private void CameraRotation()
 		{
 			// if there is an input
 			if (_input.look.sqrMagnitude >= _threshold)
