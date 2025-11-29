@@ -9,5 +9,14 @@ public class PlayerScript : MonoBehaviour
     {
         healthDisplay.GetComponent<TMPro.TMP_Text>().text = "" + playerHealth;
     }
+    public void TakeDamage(int damageAmount)
+    {
+        playerHealth -= damageAmount;
+        hurtSound.Play();
+        if (playerHealth <= 0)
+        {
+            Debug.Log("Player Dead");
+        }
+    }
 
 }
