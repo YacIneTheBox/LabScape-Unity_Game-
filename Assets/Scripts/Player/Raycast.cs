@@ -29,19 +29,19 @@ public class Raycast : MonoBehaviour
         }
     }
 
-    // J'AI SUPPRIMÉ LA FONCTION UPDATE() ICI
-    // Le script n'écoute plus le clic de souris directement.
-
-    // J'ai changé 'void' en 'public void' pour qu'on puisse l'appeler d'ailleurs
     public void Shoot()
     {
-        // Plus besoin de vérifier Time.time ici, c'est géré par la cadence de tir de l'autre script
 
         Vector3 rayOrigin = fpsCam.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, 0f));
         RaycastHit hit;
 
         if (Physics.Raycast(rayOrigin, fpsCam.transform.forward, out hit, weaponRange))
         {
+            EnemyHealth enemy = hit.collider.GetComponent<EnemyHealth>();
+            if (enemy != null)
+            {
+                enemy.TakeDamage(gunDamage);
+            }
             if (laserLine != null)
             {
                 laserLine.SetPosition(0, gunEnd.position);
