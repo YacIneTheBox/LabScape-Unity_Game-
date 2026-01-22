@@ -3,6 +3,12 @@ using UnityEngine.SceneManagement; // Obligatoire pour charger des scènes
 
 public class GameManager : MonoBehaviour
 {
+    void Start()
+    {
+        // Au lancement (ou au redémarrage), on cache et on bloque la souris
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
     public GameObject gameOverUI;
 
     public void EndGame()
