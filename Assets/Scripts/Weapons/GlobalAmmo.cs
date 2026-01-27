@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class GlobalAmmo : MonoBehaviour
 {
-    public static int handgunAmmo = 10;
+    public static int handgunAmmo = 30;
     [SerializeField] GameObject ammoDisplay;
 
     // Update is called once per frame
