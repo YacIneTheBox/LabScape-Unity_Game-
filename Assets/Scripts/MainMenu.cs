@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    public GameObject creditScene;
     void Start()
     {
         // On s'assure que la souris est visible et libre dans le menu
@@ -15,6 +16,15 @@ public class MainMenu : MonoBehaviour
         // Charge la scène suivante dans la liste (votre jeu)
         // Note : handgunAmmo repassera à sa valeur initiale de 30 au chargement
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    public void Credit()
+    {
+        creditScene.SetActive(true);
+    }
+    public void CloseCredit()
+    {
+        creditScene.SetActive(false);
     }
 
     public void QuitGame()
