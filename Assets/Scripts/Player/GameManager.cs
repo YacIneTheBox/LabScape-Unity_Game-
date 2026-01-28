@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement; // Obligatoire pour charger des scènes
 
@@ -11,17 +12,28 @@ public class GameManager : MonoBehaviour
     }
     public GameObject gameOverUI;
 
+    // Dans GameManager.cs
+    public TMP_Text finalScoreText;
+    public TMP_Text highScoreText;
+
     public void EndGame()
     {
-        // 1. Affiche le menu
         gameOverUI.SetActive(true);
-
-        // 2. Arrête le temps dans le jeu
         Time.timeScale = 0f;
-
-        // 3. Libère la souris (important pour un FPS)
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+
+        // Vérifier si c'est un nouveau record
+        if (ScoreManager.currentScore > ScoreManager.highScore)
+        {
+            ScoreManager.highScore = ScoreManager.currentScore;
+            // Sauvegarde physiquement le record sur le PC
+            PlayerPrefs.SetInt("HighScore", ScoreManager.highScore);
+        }
+
+        // Afficher les scores sur le menu
+        finalScoreText.text = "Score Final: " + ScoreManager.currentScore;
+        highScoreText.text = "Record: " + ScoreManager.highScore;
     }
 
     public void RestartGame()
