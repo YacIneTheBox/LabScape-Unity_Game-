@@ -5,6 +5,8 @@ public class AmmoItem : MonoBehaviour
 {
     public int ammoToGive = 15;
     public float respawnTime = 30f;
+    public AudioClip pickupSound;
+    [Range(0, 1)] public float volume = 1.0f;
 
     private MeshRenderer visual;
     private Collider col;
@@ -21,6 +23,11 @@ public class AmmoItem : MonoBehaviour
         {
             // On ajoute directement au stock global
             GlobalAmmo.handgunAmmo += ammoToGive;
+
+            if (pickupSound != null)
+            {
+                AudioSource.PlayClipAtPoint(pickupSound, transform.position, volume);
+            }
 
             // On cache la boîte
             StartCoroutine(HideAndRespawn());

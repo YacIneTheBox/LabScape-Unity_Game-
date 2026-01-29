@@ -156,6 +156,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   health: 2
+  deathSound: {fileID: 8300000, guid: fc37a59cbc81c9e4b8fb17108367f058, type: 3}
+  volume: 0.51
+  HealAmountOnDeath: 4
 --- !u!195 &4920195465040155091
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -166,7 +169,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 3.5
-  m_Speed: 1.5
+  m_Speed: 2
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
